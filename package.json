@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "client": "cd FrontEnd && yarn start",
+    "server": "cd server && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "proxy": "http://localhost:6800",
+  "devDependencies": {
+    "concurrently": "^6.0.2"
+  }
+}

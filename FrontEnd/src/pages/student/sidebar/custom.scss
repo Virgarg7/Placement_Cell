@@ -1,0 +1,36 @@
+$sidebar-bg-color: linear-gradient(
+  #000428,
+  #004e92
+); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+$sidebar-color: white !default;
+$highlight-color: rgb(214, 241, 63) !default;
+$submenu-bg-color-collapsed: #091369f6 !default;
+$submenu-bg-color: #09126973 !default;
+
+$icon-bg-color: #161f383f !default;
+$icon-size: 35px !default;
+$sidebar-collapsed-width: 90px !default;
+
+.pro-item-content {
+  font-size: medium !important;
+}
+.active {
+  background: #000428;
+}
+
+@import "~react-pro-sidebar/dist/scss/styles.scss";
+
+.logo {
+  display: flex;
+  margin: 1rem 0;
+  align-items: center;
+  img {
+    height: 10vh;
+    margin-left: 0.6rem;
+    margin-right: 1.6rem;
+  }
+  span {
+    font-size: xx-large;
+  }
+}
