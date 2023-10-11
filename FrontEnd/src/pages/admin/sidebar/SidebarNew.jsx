@@ -16,7 +16,7 @@ import { MdComputer } from "react-icons/md";
 import { RiDashboardLine, RiFullscreenFill } from "react-icons/ri";
 import { BiGitBranch } from "react-icons/bi";
 
-import logo from "../../../assets/app-logo.svg";
+import logo from "../../../assets/app-logo.png";
 
 function SidebarNew({ current }) {
   const [navbarCollapse, setnavbarCollapse] = useState(false);
@@ -28,7 +28,7 @@ function SidebarNew({ current }) {
       <SidebarHeader>
         <div className="logo">
           <img src={logo} alt="Aurora Logo" />
-          <span>AURORA</span>
+          <span>NITJ</span>
         </div>
       </SidebarHeader>
       <SidebarContent>

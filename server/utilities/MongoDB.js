@@ -20,9 +20,13 @@ class MongoDB {
     }
 
     async createDocument({ model, data }) {
+        
         const object = new model(data);
-        const result = await object.save();
-        return result;
+       
+            const result = await object.save();
+            console.log(result);
+            return result;
+         
     }
 
     async deleteDocument({ model, id }) {

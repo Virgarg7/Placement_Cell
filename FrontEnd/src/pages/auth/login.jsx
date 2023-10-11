@@ -109,7 +109,7 @@ const Login = () => {
                             fontFamily: `'Architects Daughter', cursive`,
                           }}
                         >
-                          <h5>AURORA PLACEMENT TRACKER</h5>
+                          <h5>NITJ PLACEMENT CELL</h5>
                         </EuiTitle>
                       </EuiFlexItem>
                     </EuiFlexGroup>

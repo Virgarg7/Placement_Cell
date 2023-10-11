@@ -17,7 +17,7 @@ import { RiDashboardLine, RiFullscreenFill } from "react-icons/ri";
 import { FiSettings } from "react-icons/fi";
 import { CgNotes } from "react-icons/cg";
 
-import logo from "../../../assets/app-logo.svg";
+import logo from "../../../assets/app-logo.png";
 
 function Sidebar({ current }) {
   const [navbarCollapse, setnavbarCollapse] = useState(false);
@@ -29,7 +29,7 @@ function Sidebar({ current }) {
       <SidebarHeader>
         <div className="logo">
           <img src={logo} alt="Aurora Logo" />
-          <span>AURORA</span>
+          <span>NITJ</span>
         </div>
       </SidebarHeader>
       <SidebarContent>
