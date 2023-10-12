@@ -1,288 +1,125 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
 body {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
-  line-height: 1.3rem;
-  //   background-color: black;
-  //   font: 12pt "Tahoma";
+  padding-top: 20px;
   font-family: "Lato", sans-serif;
-}
-* {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-}
-.page {
-  width: 210mm;
-  //   min-height: 297mm;
-  //   height: fit-content;
-  min-height: 100%;
-  //   padding: 20mm;
-  margin: 10mm auto;
-  //   border: 1px #d3d3d3 solid;
-  //   border-radius: 5px;
-  background: white;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-.subpage {
-  //   padding: 1cm;
-  //   border: 5px red solid;
-  //   height: 257mm;
-  //   outline: 2cm #ffeaea solid;
+  background-color: #f5f5f5; /* Background color for the entire page */
 }
 
-@page {
-  size: A4;
-  margin: 0;
+* {
+  box-sizing: border-box;
 }
-@media print {
-  html,
-  body {
-    width: 210mm;
-    // height: 297mm;
-    height: fit-content;
-    // height: 100%;
-    background: white;
-  }
-  .page {
-    margin: 0;
-    border: initial;
-    border-radius: initial;
-    width: initial;
-    min-height: initial;
-    box-shadow: initial;
-    background: white;
-    page-break-after: always;
-  }
+
+.page {
+  max-width: 800px; /* Adjust the max-width for better readability */
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border: 2px solid black;
 }
 
 .resume {
-  color: white;
+  color: #333; /* Update text color for better readability */
   display: flex;
-  // max-height: 297mm;
-  height: fit-content;
-  min-height: 297mm;
-  li {
-    line-height: 1rem;
-  }
-  // height: 297mm;
-  p {
-    font-size: 0.9rem;
-    text-align: justify;
-    margin: 0.7rem 0;
-  }
-  h3 {
-    font-size: 0.9rem;
-  }
-  h6 {
-    font-size: small;
-  }
-  a {
-    font-size: small;
-  }
-  .pane1 {
-    a {
-      color: white;
-    }
-
-    width: 35%;
-    background-color: #1d44b8;
-  }
-  .photo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 0.5rem;
-    img {
-      height: 150px;
-      width: 150px;
-      border-radius: 100%;
-    }
-  }
-  .name {
-    font-size: xx-large;
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white !important;
-  }
-  .subTitle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: medium;
-    padding-bottom: 0.3rem;
-  }
-  .profile {
-    // padding: 1.5rem;
-    div {
-      padding: 0.2rem 0;
-    }
-    .social {
-      display: flex;
-      //   width: 85%;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      .networks {
-        width: 50%;
-      }
-    }
-  }
-  .hobbies {
-    text-transform: capitalize;
-    h3 {
-      padding: 0.2rem 0;
-      font-size: 1rem;
-    }
-  }
-  .certifications {
-    .certificate {
-      //   width: 85%;
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: 0.39rem;
-
-      .date {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-    }
-  }
-  .awards {
-    // display: inline;
-    // flex-direction: column;
-    .award {
-      display: flex;
-      //   width: 85%;
-      justify-content: space-between;
-      //   padding: 0.5rem;
-      padding-bottom: 0.39rem;
-      .space1 {
-        width: 60%;
-      }
-      .date {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-    }
-  }
-
-  .languages {
-    display: flex;
-    width: 85%;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    // display: inline;
-    // flex-direction: column;
-    .language {
-      min-width: 50%;
-      padding: 0.25rem;
-
-      h6 {
-        font-size: small;
-        // padding-top: 0.2rem;
-      }
-    }
-  }
-
-  .pane2 {
-    width: 65%;
-    max-width: 65%;
-    min-height: max-content;
-    // max-height: max-content;
-    // height: 100%;
-    color: black;
-    background-color: white;
-    padding-top: 0.7rem;
-
-    .workExp {
-      .exp {
-        .exp-info {
-          display: flex;
-          justify-content: space-between;
-          .exp-name {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-          }
-        }
-      }
-    }
-    .educations {
-      .education {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        .education-info {
-          display: flex;
-          //   justify-content: flex-end;
-          align-items: flex-end;
-          flex-direction: column;
-        }
-      }
-    }
-
-    .skills {
-      display: flex;
-      // justify-content: space-between;
-      flex-wrap: wrap;
-      .skill {
-        width: 22%;
-        // max-height: 3rem;
-        // padding-bottom: 0.2rem;
-        border-radius: 0.2rem;
-        border: 0.4rem inset #112c7c;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #1d44b8;
-        color: white;
-        // padding: 1rem;
-        margin: 0.2rem;
-      }
-      .skill:nth-child(even) {
-        border: 0.4rem outset #112c7c;
-      }
-    }
-    .projects {
-      .project {
-        .project-info {
-          display: flex;
-          justify-content: space-between;
-
-          .project-name {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-          }
-        }
-      }
-    }
-    .references {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      .reference {
-        max-width: 33%;
-      }
-    }
-    .objective {
-      p {
-        text-align: justify;
-      }
-    }
-  }
+  flex-wrap: wrap; /* Allow content to wrap to the next line */
+  gap: 20px; /* Add spacing between resume sections */
 }
 
-.container {
-  padding: 0.5rem 1rem 0 1rem;
-  width: 95%;
+.resume h3 {
+  font-size: 1.2rem; /* Increase heading font size for emphasis */
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.resume p {
+  font-size: 1rem; /* Increase text font size for readability */
+  margin: 0.5rem 0;
+}
+
+.resume a {
+  color: #007bff; /* Change link color */
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.resume a:hover {
+  color: #0056b3; /* Change link color on hover */
+}
+
+.resume .pane1 {
+  flex: 1; /* Make this section flexible to adjust to content */
+  background-color: #007bff;
+  padding: 20px;
+  color: white;
+}
+
+.resume .pane2 {
+  flex: 2; /* Make this section flexible to adjust to content */
+  background-color: white;
+  padding: 20px;
+}
+
+.resume .photo {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  padding-top: 0.5rem;
+}
+
+.resume .photo img {
+  max-width: 100%; /* Ensure the photo doesn't exceed its container */
+  border-radius: 50%;
+}
+
+.resume .name {
+  font-size: 2rem; /* Increase name font size for emphasis */
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center; /* Center the name */
+}
+
+.resume .subTitle {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 1rem; /* Add some spacing below subtitle */
+}
+
+.resume .profile {
+  margin-bottom: 1rem; /* Add spacing below profile section */
+  color: #333; /* Set text color for profile section */
+}
+
+.resume .profile h3,
+.resume .profile h6 {
+  margin: 0; /* Remove default margin for better alignment */
+  padding: 0.2rem 0; /* Add spacing between items */
+}
+
+.resume .hobbies h3 {
+  font-size: 1.2rem;
+}
+
+.resume .certifications,
+.resume .awards,
+.resume .languages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Add spacing between items in these sections */
+}
+
+.resume .certifications .certificate,
+.resume .awards .award,
+.resume .languages .language {
+  flex-basis: calc(50% - 10px); /* Two items per row with spacing */
+}
+
+.resume .skills .skill {
+  flex-basis: calc(25% - 10px); /* Four items per row with spacing */
 }
 
 .heading {
@@ -301,17 +138,92 @@ body {
 .inverse-heading {
   display: flex;
   align-items: center;
-  width: 95%;
+  width: 80%;
   margin-top: 0.2rem;
   padding-left: 1.5rem;
   min-height: 2rem;
   font-size: larger;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  background-color: #112c7c;
+  background-color: #007bff;
   color: white;
 }
 
-.euiMarkdownFormat {
-  color: black !important;
+.resume .section-heading {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-bottom: 10px;
+  border-left: 5px solid #0056b3; /* Add a left border with a slightly darker color */
+}
+
+.resume .section-heading:nth-child(odd) {
+  background-color: #0056b3; /* Alternate background color for section headings */
+}
+
+/* Style content after section headings */
+.resume .section-content {
+  padding: 20px; /* Add padding to separate content from headings */
+  border-left: 5px solid #007bff; /* Add a left border for content */
+  margin-bottom: 20px; /* Add spacing below content */
+}
+
+/* Style the skills section */
+.resume .skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Add spacing between skill items */
+  margin-top: 20px; /* Add spacing above the skills section */
+  margin-bottom: 20px;
+}
+
+.resume .skills .skill {
+  flex-basis: calc(33.33% - 10px); /* Three items per row with spacing */
+  padding: 10px;
+  background-color: #a8d2ff;; /* Background color for skills items */
+  border: 1px solid #ddd; /* Add a border for skills items */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  text-align: center;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.resume .skills .skill:hover {
+  background-color: #007bff; /* Change background color on hover */
+  color: white; /* Change text color on hover */
+}
+
+.resume .skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Add spacing between skill items */
+  margin-top: 20px; /* Add spacing above the skills section */
+  margin-bottom: 20px;
+}
+
+.resume .skills .skill:hover {
+  background-color: #007bff; /* Change background color on hover */
+  color: white; /* Change text color on hover */
+}
+
+/* Add spacing to other sections as well */
+.resume .container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.resume .pane2 {
+  padding-top: 0;
+}
+
+.resume .profile h3 {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  color: white;
+}
+
+.resume .profile a,h6{
+  color: #333;
 }
