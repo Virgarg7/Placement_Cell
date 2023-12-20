@@ -18,7 +18,7 @@ import {
 } from "@elastic/eui";
 import Cookies from "js-cookie";
 
-import logo from "../../assets/app-logo.svg";
+import logo from "../../assets/app-logo.png";
 import graphic from "../../assets/app-graphic2.svg";
 import { useHistory } from "react-router-dom";
 const LoginAdmin = () => {
@@ -106,7 +106,7 @@ const LoginAdmin = () => {
                             fontFamily: `'Architects Daughter', cursive`,
                           }}
                         >
-                          <h5>AURORA PLACEMENT TRACKER</h5>
+                          <h5>NITJ PLACEMENT CELL</h5>
                         </EuiTitle>
                       </EuiFlexItem>
                     </EuiFlexGroup>

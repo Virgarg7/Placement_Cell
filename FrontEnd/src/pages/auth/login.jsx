@@ -16,7 +16,7 @@ import {
   EuiFlexGroup,
   EuiFlexItem,
 } from "@elastic/eui";
-import logo from "../../assets/app-logo.svg";
+import logo from "../../assets/app-logo.png";
 import graphic from "../../assets/app-graphic1.svg";
 import { useHistory } from "react-router-dom";
 import Cookies from "js-cookie";
